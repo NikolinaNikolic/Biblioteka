@@ -4,19 +4,26 @@ public class Racun {
 	private int brRacuna;
 	private String ime;
 	private double posudjene;
+	private int brKnjige;
 	
 
 	public Racun() {
 	}
 	
-	public Racun(int brRacuna,String ime,int posudjene) {
+	public Racun(int brRacuna,String ime) {
 		
 
 		this.brRacuna = brRacuna;
 		this.ime = ime;
-	    this.posudjene=posudjene;
+	 //   this.posudjene=posudjene;
 
 }
+	
+	public Racun(int brRacuna, String ime, int brKnjige) {
+		this(brKnjige, ime);
+		this.brKnjige = brKnjige;
+	}
+
 	public int getBrRacuna() {
 		return brRacuna;
 	}
@@ -40,9 +47,21 @@ public class Racun {
 		this.posudjene = posudjene;
 	}
 
+	public int getBrKnjige() {
+		return brKnjige;
+	}
 
+	public void setBrKnjige(int brKnjige) {
+		this.brKnjige = brKnjige;
+	}
+
+	
 
 	}
+
+
+
+	
 
 
 

@@ -25,7 +25,9 @@ public class Knjiga {
 		this.ime = ime;
 		
 	}
-	public int getBrRacuna() {
+	
+	
+	public int getBrKnjige() {
 		return brKnjige;
 	}
 
@@ -44,6 +46,12 @@ public class Knjiga {
 		return izdata;
 	}
 
+	
+	public boolean izdavanje() {
+		return izdata;
+	}
+
+	
 	public void setIzdata(boolean izdata) {
 		this.izdata = izdata;
 	}

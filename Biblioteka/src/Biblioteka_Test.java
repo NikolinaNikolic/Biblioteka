@@ -59,16 +59,45 @@ public class Biblioteka_Test {
 				}	
 					
 				if(broj==3) {
+					System.out.println("Unesite broj knjige i broj racuna");
+					int brRacuna=unos.nextInt();
+				System.out.println("Unesite br knjige");
+					int brKnjige=unos.nextInt();
+					
+					racun.posudjivanje(brRacuna, brKnjige);
+				
+					
+					System.out.println("Unesite broj ponovo");
+					broj=unos.nextInt();
+					}	
 					
 					
-				}	
+					
 					
 					
 				if(broj==4) {
 					
+						System.out.println("Unesite broj knjige i broj racuna");
+						int brRacuna=unos.nextInt();
+					System.out.println("Unesite br knjige");
+						int brKnjige=unos.nextInt();
+						
+						racun.vracanje(brRacuna, brKnjige);
 					
+						
+						System.out.println("Unesite broj ponovo");
+						broj=unos.nextInt();
+						}
+					
+				if(broj==5) {
+					System.out.println("Informacije o korisniku");	
+					racun.informacijeRacun();
+					racun.informacijeKnjige();
+					System.out.println("Unesite broj ponovo");
+					broj=unos.nextInt();
+					}	
 				}
-				}
+				
 				catch (Exception e) {
 					System.out.println("Pogresan unos pokusajte ponovo!");
 				}
@@ -76,17 +105,12 @@ public class Biblioteka_Test {
 				while (broj<3);
 		  
 					
-		/*		if(broj==5) {
-				System.out.println("Informacije o korisniku");	
-				racun.stanjeRacuna();
-				System.out.println("Unesite broj ponovo");
-				broj=unos.nextInt();
-				}	
-				}}
 				
-			*/	
+				}
+				
+				
 
 	}
 
-		  }
+		  
 
